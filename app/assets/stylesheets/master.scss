@@ -32,6 +32,12 @@
   font-style: italic;
   padding-top: 26px;
 }
+.footer-blurb {
+  font-family: "quicksandregular", sans serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 14px;
+}
 
 .links {
   padding-top: 26px;
@@ -59,4 +65,10 @@ h1 {
 
 h2 {
   font-family: 'quicksandlight', sans-serif;
+}
+.next-quote {
+  color:#f84342;
+  font-family: 'quicksandlight', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -14,13 +14,15 @@ h3 span {
 .fade-in {
     opacity: 0;
     border: 1px solid transparent;
+    padding: 30px;
+    margin: -30px;
 }
 .fade-in:hover {
         opacity: 1;       
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1s;
+	animation-duration: 2s;
  
 }
 
@@ -107,13 +109,13 @@ h2 {
 }
 
 $thick : 3px;
-$pad : 0.2em;
+$pad : 0.7em;
 $extra : calc(#{$pad} * 1.2);
 $color : #f84342;
 
 .logo {
   margin-left: 30px;
- 
+  margin-top: 5px;
   a {
     color: white;
     padding: $pad $extra;
@@ -122,10 +124,10 @@ $color : #f84342;
     position: relative;
     font-size: 1.5em;
     cursor: pointer;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.02em;
 
     .text {
-      // padding: 0 0.3em;
+     // padding: 0 0.3em;
       font-family: proxima-nova, monospace;
       transform: translate3d(0,$pad,0);
       display: block;
@@ -243,6 +245,11 @@ $color : #f84342;
         transform-origin: left;
       }
     }
-
+      transform-origin: left;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
   }
 }
